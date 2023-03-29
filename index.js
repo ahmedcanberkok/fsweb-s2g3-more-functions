@@ -1,5 +1,7 @@
 // Aşağıdaki görevleri tamamlayın
 
+import path from 'path';
+
 /*
   GÖREV 1
   - Input:  Bir dosya yolunu (path) parametre olarak alacak bir fonksiyon oluştur.
@@ -16,9 +18,13 @@
   örnek output: ""
 */
 
-function dosyaAdiniBul(/* kodlar buraya */) {
-  // kodlar buraya
-}
+function dosyaAdiniBul(path) {
+ // var path = require('path');
+
+  var filename = path.basename('C:/Users/AHMEDCANBERKOK/Workintech-Repos/FSWeb-S1-Challenge/.gitignore');
+  console.log('Görev1 :',filename);
+} 
+dosyaAdiniBul(path) ;
 
 /*
   GÖREV 2
@@ -38,14 +44,26 @@ function dosyaAdiniBul(/* kodlar buraya */) {
   örnek output: 104
 */
 
-function ortalamaBul(/* kodlar buraya */) {
+function ortalamaBul(dizi ){
   // kodlar buraya
+  // const avg = arr.reduce( ( p, c ) => p + c, 0 ) / arr.length;
+    
+//const result = [ 4, 4, 5, 6, 6 ]; // 5
+    
+//console.log(result)
+const arr = [1,2,3,4,5,6,7];
+const average = arr.reduce((a, b) => a + b, 0) / arr.length;
+
+console.log('Görev2 :',average);
+
 }
+ortalamaBul() ;
 
 /*
   GÖREV 3
   - Input:  Bir sayı arrayini ve ortalama bulmaya yarayacak bir fonksiyonu parametre olarak alacak bir fonksiyon oluştur.
-  - Output: Yazacağın fonksiyon input olarak aldığı sayı arrayinin aritmetik ortalamasından büyük ya da eşit elemanlardan oluşan bir array dönmeli.
+  - Output: Yazacağın fonksiyon input olarak aldığı sayı arrayinin aritmetik ortalamasından büyük ya da eşit elemanlardan oluşan
+   bir array dönmeli.
   * Çağırırken kendi ortalama fonksiyonunla çağırabilirsin, ama parametrenin tanımlama aşamasında soyut bir ifade olduğunu unutma.
   * f(x) = 2x+5 içerisindeki x değeri gibi.
 
