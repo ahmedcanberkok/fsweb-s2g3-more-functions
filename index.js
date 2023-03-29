@@ -21,7 +21,7 @@ import path from 'path';
 function dosyaAdiniBul(path) {
  // var path = require('path');
 
-  var filename = path.basename('C:/Users/AHMEDCANBERKOK/Workintech-Repos/FSWeb-S1-Challenge/.gitignore');
+  var filename = path.basename('C:/Users/AHMEDCANBERKOK/Workintech-Repos/FSWeb-S1-Challenge/.gitignore.txt');
   console.log('Görev1 :',filename);
 } 
 dosyaAdiniBul(path) ;
@@ -45,12 +45,6 @@ dosyaAdiniBul(path) ;
 */
 
 function ortalamaBul(dizi ){
-  // kodlar buraya
-  // const avg = arr.reduce( ( p, c ) => p + c, 0 ) / arr.length;
-    
-//const result = [ 4, 4, 5, 6, 6 ]; // 5
-    
-//console.log(result)
 const arr = [1,2,3,4,5,6,7];
 const average = arr.reduce((a, b) => a + b, 0) / arr.length;
 
@@ -80,9 +74,12 @@ ortalamaBul() ;
   örnek output: [109, 216, 288, 143, 185, 194]
 */
 
-function ortalamadanBuyukleriBul(/* kodlar buraya */) {
-  // kodlar buraya
+function ortalamadanBuyukleriBul(mydizi,fnc) {
+
+  
+
 }
+
 
 /* !!!! Burdan aşağısını değiştirmeyin !!!! */
 function as() {
